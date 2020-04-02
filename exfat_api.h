@@ -101,6 +101,10 @@
 /*  Type Definitions                                                    */
 /*----------------------------------------------------------------------*/
 
+#ifndef _TIME_T
+    typedef __kernel_old_time_t	time_t;
+#endif
+
 typedef struct {
 	u16      Year;
 	u16      Month;
